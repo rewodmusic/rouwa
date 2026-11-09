@@ -1283,3 +1283,90 @@ img {
     animation-duration: .01ms !important;
   }
 }
+
+
+/* ============================================================
+   ROUWA — SAFARI & MOBILE FIXES
+   ============================================================ */
+
+/* 01 — DARK BACKGROUND BEHIND SAFARI FOOTER */
+
+html {
+  background-color: #1e2420;
+}
+
+body {
+  background-color: var(--paper-soft);
+}
+
+.site-footer {
+  background-color: #1e2420;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+
+/* 02 — REPLACE EMOJI ARROWS WITH CSS-DRAWN ARROWS */
+
+.text-link > span,
+.desktop-nav__contact > span,
+.mobile-menu__panel a[href="#enquiries"] > span {
+  display: inline-block;
+  position: relative;
+
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+
+  padding: 0 !important;
+  margin: 0;
+
+  font-size: 0 !important;
+  line-height: 0;
+
+  vertical-align: middle;
+  color: inherit;
+}
+
+/* Diagonal arrow shaft */
+
+.text-link > span::before,
+.desktop-nav__contact > span::before,
+.mobile-menu__panel a[href="#enquiries"] > span::before {
+  content: "";
+  position: absolute;
+
+  width: 16px;
+  height: 1px;
+
+  left: 2px;
+  bottom: 2px;
+
+  background: currentColor;
+
+  transform: rotate(-45deg);
+  transform-origin: left center;
+}
+
+/* Arrow head */
+
+.text-link > span::after,
+.desktop-nav__contact > span::after,
+.mobile-menu__panel a[href="#enquiries"] > span::after {
+  content: "";
+  position: absolute;
+
+  width: 9px;
+  height: 9px;
+
+  top: 1px;
+  right: 1px;
+
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+}
+
+/* Restore spacing in desktop navigation */
+
+.desktop-nav__contact > span {
+  margin-left: 13px;
+}
