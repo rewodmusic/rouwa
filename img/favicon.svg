@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="ROUWA R monogram">
+<rect width="512" height="512" rx="88" fill="#252C28"/>
+<path fill="#F1EEE7" fill-rule="evenodd" d="M 111,370 L 111,140 L 238,140 C 318,140 354,177 354,237 C 354,283 329,311 288,323 L 356,370 L 293,370 L 228,326 L 165,326 L 165,370 Z M 165,187 L 165,280 L 235,280 C 277,280 300,262 300,235 C 300,205 279,187 235,187 Z"/>
+<circle cx="401" cy="345" r="25" fill="#A68E6E"/>
+</svg>
