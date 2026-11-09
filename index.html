@@ -1,13 +1,211 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROUWA — Interior Design</title>
+  <meta name="theme-color" content="#f6f3ee">
+  <meta name="description" content="ROUWA is an independent creative concept exploring thoughtful interiors, residential spaces and the relationship between form, material and light.">
+  <title>ROUWA — Interior Concepts & Spatial Design</title>
+
+  <!-- Editorial typefaces; system fallbacks are provided in CSS. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>ROUWA</h1>
-  <p>Interior Design & Spatial Concepts</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-header__inner shell">
+      <a class="wordmark" href="#top" aria-label="ROUWA — Home">ROUWA<span class="wordmark__dot">.</span></a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#philosophy">Philosophy</a>
+        <a href="#concepts">Concepts</a>
+        <a href="#studio">Studio</a>
+        <a class="desktop-nav__contact" href="#enquiries">Enquiries <span aria-hidden="true">↗</span></a>
+      </nav>
+
+      <!-- Fully working mobile menu, no JavaScript needed. -->
+      <details class="mobile-menu">
+        <summary aria-label="Open navigation menu"><span></span><span></span></summary>
+        <nav class="mobile-menu__panel" aria-label="Mobile navigation">
+          <a href="#philosophy">Philosophy</a>
+          <a href="#concepts">Concepts</a>
+          <a href="#studio">Studio</a>
+          <a href="#enquiries">Enquiries <span aria-hidden="true">↗</span></a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO: HOMEPAGE -->
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span> Independent design concept <span class="eyebrow__separator">/</span> Budapest</p>
+
+        <div class="hero__main-copy">
+          <p class="hero__index">01 <span aria-hidden="true">/</span> 04</p>
+          <h1 id="hero-title">Space,<br><em>in its</em><br>quietest form.</h1>
+          <p class="hero__description">An exploration of considered interiors, natural materials and spaces that feel as calm as they look.</p>
+          <a class="text-link" href="#philosophy">Discover our perspective <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <p class="hero__micro">INTERIOR CONCEPTS <span aria-hidden="true">·</span> SPATIAL DESIGN <span aria-hidden="true">·</span> EST. 2026</p>
+      </div>
+
+      <div class="hero__art">
+        <!-- IMAGE PLACEHOLDER 01
+             To use a real photo later, replace the entire .visual--hero div with:
+             <img class="real-image" src="img/hero.jpg" alt="Describe the interior">
+        -->
+<img
+  src="img/hero.png"
+  alt="ROUWA — Luxury residential interior design concept"
+  class="real-image"
+  loading="eager"
+  fetchpriority="high"
+>
+<div class="hero__art-footer">
+  <span>ROUWA / RESIDENTIAL CONCEPT</span>
+  <span>01 — 26</span>
+</div>
+</div>
+</section>
+
+    <!-- A QUIET INTERLUDE -->
+    <div class="marquee-line" aria-hidden="true">
+      <div class="shell marquee-line__inner"><span>FORM</span><i></i><span>MATERIAL</span><i></i><span>LIGHT</span><i></i><span>STILLNESS</span><i></i><span>INTENTION</span></div>
+    </div>
+
+    <!-- PHILOSOPHY TEASER -->
+    <section class="philosophy section shell" id="philosophy" aria-labelledby="philosophy-title">
+      <div class="section-label"><span>01 / OUR PERSPECTIVE</span><span class="section-label__line"></span></div>
+      <div class="philosophy__layout">
+        <h2 id="philosophy-title" class="section-title">A slower way<br>of <em>seeing.</em></h2>
+        <div class="philosophy__right">
+          <p class="large-copy">Good spaces are not defined by how much they contain, but by what they allow us to feel.</p>
+          <p class="body-copy">ROUWA is an independent creative initiative exploring contemporary residential interiors through restraint, balance and thoughtful detailing. Every concept begins with the relationship between material, light and everyday life.</p>
+          <a class="text-link" href="#concepts">Explore the concepts <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+   
+<!-- CONCEPTS -->
+<section class="concepts section" id="concepts" aria-labelledby="concepts-title">
+  <div class="shell">
+
+    <div class="section-label">
+      <span>02 / VISUAL EXPLORATIONS</span>
+      <span class="section-label__line"></span>
+    </div>
+
+    <div class="concepts__heading">
+      <h2 id="concepts-title" class="section-title">
+        Studies in<br><em>atmosphere.</em>
+      </h2>
+      <p class="body-copy">
+        An evolving collection of independent interior explorations,
+        studying the relationship between material, light, form and atmosphere.
+      </p>
+    </div>
+
+    <div class="concept-grid">
+
+      <!-- CONCEPT 01: MATERIAL & SILENCE -->
+      <article class="concept-card concept-card--large">
+
+        <img
+          src="img/concept-01.png"
+          alt="ROUWA — Material & Silence, minimalist luxury kitchen and dining interior concept"
+          class="real-image"
+          loading="lazy"
+          decoding="async"
+        >
+
+        <div class="concept-card__caption">
+          <div>
+            <span class="concept-card__number">01 / STUDY</span>
+            <h3>Material & Silence</h3>
+          </div>
+          <span class="concept-card__type">Concept visual</span>
+        </div>
+
+      </article>
+
+      <!-- CONCEPT 02: SOFT GEOMETRY -->
+      <article class="concept-card concept-card--small">
+
+        <img
+          src="img/concept-02.png"
+          alt="ROUWA — Soft Geometry, sculptural curved staircase interior concept"
+          class="real-image"
+          loading="lazy"
+          decoding="async"
+        >
+
+        <div class="concept-card__caption">
+          <div>
+            <span class="concept-card__number">02 / STUDY</span>
+            <h3>Soft Geometry</h3>
+          </div>
+          <span class="concept-card__type">Concept visual</span>
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- STUDIO TEASER -->
+<section class="studio section shell" id="studio" aria-labelledby="studio-title">
+  <div class="section-label"><span>03 / THE INITIATIVE</span><span class="section-label__line"></span></div>
+  <div class="studio__layout">
+    <div>
+      <p class="overline">INDEPENDENT BY DESIGN</p>
+      <h2 id="studio-title" class="section-title">A quieter<br>approach to <em>space.</em></h2>
+    </div>
+        <div class="studio__details">
+          <p class="body-copy">ROUWA is an independent design initiative with a deliberately private approach to interior architecture and spatial design.
+
+Its focus lies in the exploration of refined residential interiors, architectural concepts, and the development of a distinctive visual language.
+
+The project maintains a discreet presence, with its creative work developed privately and public commissions currently unavailable. Its long-term vision extends toward residential property transformation and development.</p>
+          <div class="founder">
+            <span class="founder__line"></span>
+            <div><strong>REWOD</strong><span>Founder & Creative Director</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVAILABILITY / CONTACT -->
+    <section class="enquiries" id="enquiries" aria-labelledby="enquiries-title">
+      <div class="shell enquiries__inner">
+        <div class="section-label section-label--light"><span>04 / AVAILABILITY</span><span class="section-label__line"></span></div>
+        <div class="enquiries__content">
+          <div>
+            <p class="overline">PRIVATE BY NATURE</p>
+            <h2 id="enquiries-title">A considered<br><em>beginning.</em></h2>
+          </div>
+          <div class="enquiries__aside">
+            <p>ROUWA explores residential interiors through an independent, deliberately private design process.</p>
+            <p class="enquiries__notice">Current work centres on spatial concepts, material studies and refined contemporary living.</p>
+            <span class="enquiries__status"><span class="status-dot"></span> PRIVATE BY DESIGN</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__top"><a class="wordmark" href="#top">ROUWA<span class="wordmark__dot">.</span></a><span>INTERIOR CONCEPTS & SPATIAL DESIGN</span></div>
+    <div class="shell site-footer__bottom"><span>© 2026 ROUWA — Independent creative concept.</span><span>Budapest, Hungary</span><a href="#top">Back to top ↑</a></div>
+  </footer>
 </body>
 </html>
